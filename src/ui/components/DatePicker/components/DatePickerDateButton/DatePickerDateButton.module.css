@@ -1,0 +1,19 @@
+.date_picker_date_button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #000000;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.date_picker_date_button:hover {
+  background-color: #989898;
+}
+
+.date_picker_date_button:focus {
+  outline: none;
+}

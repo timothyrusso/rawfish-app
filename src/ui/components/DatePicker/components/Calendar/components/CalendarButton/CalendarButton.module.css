@@ -1,0 +1,21 @@
+.handle_status_button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #000000;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-left: 16px;
+}
+
+.handle_status_button:hover {
+  background-color: #989898;
+}
+
+.handle_status_button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}

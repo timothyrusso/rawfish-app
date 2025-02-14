@@ -1,0 +1,45 @@
+export const it = {
+	user_page: {
+		user_profile: "Profilo utente",
+		email: "Email",
+		phone: "Telefono",
+		location: "Luogo",
+		registration: "Registrazione",
+		back_to_home: "Torna alla Home Page",
+	},
+	home_page: {
+		no_users: "Nessun utente trovato",
+	},
+	table: {
+		name: "Nome",
+		surname: "Cognome",
+		location: "Luogo",
+		photo: "Foto",
+	},
+	errors: {
+		unknown_error: "Errore sconosciuto",
+		retry: "Riprova",
+	},
+	calendar: {
+		start: "Inizio",
+		end: "Fine",
+		select_range: "Seleziona intervallo",
+		apply: "Applica",
+		cancel: "Annulla",
+		month_names: [
+			"Gennaio",
+			"Febbraio",
+			"Marzo",
+			"Aprile",
+			"Maggio",
+			"Giugno",
+			"Luglio",
+			"Agosto",
+			"Settembre",
+			"Ottobre",
+			"Novembre",
+			"Dicembre",
+		],
+		week_names: ["Dom", "Lun", "Mar", "Mer", "Gio", "Ven", "Sab"],
+	},
+};

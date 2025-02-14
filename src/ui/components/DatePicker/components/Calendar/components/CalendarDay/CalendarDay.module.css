@@ -1,0 +1,42 @@
+.day_button {
+  height: 32px;
+  width: 100%;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.day_button_selected {
+  background-color: #000;
+  color: white;
+}
+
+.day_button_in_range {
+  background-color: #cfcfcf;
+  color: black;
+}
+
+.day_button_hidden {
+  visibility: hidden;
+}
+
+.day_button:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+  background-color: black;
+  color: white;
+}
+
+.day_button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@media (max-width: 560px) {
+  .day_button {
+    height: 24px;
+    font-size: 12px;
+    width: 24px;
+  }
+}

@@ -1,0 +1,12 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  padding-top: 130px;
+  width: 500px;
+}
+
+@media (max-width: 560px) {
+  .table {
+    width: 350px;
+  }
+}
