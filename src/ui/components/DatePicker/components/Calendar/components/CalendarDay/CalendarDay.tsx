@@ -17,21 +17,23 @@ export const CalendarDay: FC<CalendarDayProps> = ({
 	handleDateClick,
 }) => {
 	return calendarDays.map((date) => {
-		if (!date) return;
-
 		const isSelected =
 			date &&
 			(date.getTime() === selectedStartDate?.getTime() ||
 				date.getTime() === selectedEndDate?.getTime());
-		const isInRange = isDateInRange(date);
+		const isInRange = date ? isDateInRange(date) : false;
 
 		return (
 			<button
 				type="button"
 				key={date?.getTime()}
-				onClick={() => handleDateClick(date)}
+				onClick={() => date && handleDateClick(date)}
 				disabled={!date}
-				className={`${styles.day_button} ${isSelected ? styles.day_button_selected : ""} ${isInRange && !isSelected ? styles.day_button_in_range : ""} ${!date ? styles.day_button_hidden : ""}`}
+				className={`${styles.day_button} ${
+					isSelected ? styles.day_button_selected : ""
+				} ${isInRange && !isSelected ? styles.day_button_in_range : ""} ${
+					!date ? styles.day_button_hidden : ""
+				}`}
 			>
 				{date?.getDate()}
 			</button>

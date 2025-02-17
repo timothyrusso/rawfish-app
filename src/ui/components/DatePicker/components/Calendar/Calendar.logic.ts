@@ -38,7 +38,7 @@ export const useCalendarLogic = () => {
 		);
 		const startingDayOfWeek = firstDayOfMonth.getDay();
 
-		const days = [];
+		const days: (Date | null)[] = [];
 
 		for (let i = 0; i < startingDayOfWeek; i++) {
 			days.push(null);
